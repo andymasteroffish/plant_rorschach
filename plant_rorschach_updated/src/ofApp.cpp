@@ -500,13 +500,11 @@ void ofApp::mouseMoved(int x, int y){
 
 //--------------------------------------------------------------
 void ofApp::mouseDragged(int x, int y, int button){
-
-    
     if (draggingCam){
         camPos.x = oldCamPos.x + (x-pressPos.x) / (camScale);
         camPos.y = oldCamPos.y + (y-pressPos.y) / (camScale);
         
-        cout<<"dat x "<<camPos.x<<endl;
+        //cout<<"dat x "<<camPos.x<<endl;
     }
 }
 
